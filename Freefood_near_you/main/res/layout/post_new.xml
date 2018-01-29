@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" tools:showIn="@layout/app_bar_main2"
+
+
+    tools:context=".ui.PostNew">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textStyle="italic"
+        android:id="@+id/food_name"
+
+        android:hint="Item title"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POST"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        android:background="@drawable/buttn"
+        android:id="@+id/post_Btn"
+        android:layout_below="@+id/location"
+        android:layout_toRightOf="@+id/location"
+        android:layout_toEndOf="@+id/location"
+        android:layout_marginTop="118dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivCamera"
+        android:background="#000"
+        android:src="@android:drawable/ic_menu_camera"
+        android:onClick="photo"
+        android:layout_below="@+id/post_Btn"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:text="Photo/Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textStyle="bold"
+        android:onClick="photo"
+        android:layout_below="@+id/ivCamera"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="49dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        android:ems="10"
+
+        android:id="@+id/description"
+        android:hint="What's this all about"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/ivCamera"
+        android:layout_toStartOf="@+id/ivCamera"
+        android:layout_marginTop="34dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+
+        android:id="@+id/location"
+
+        android:hint="Location"
+        android:layout_below="@+id/imageView"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginTop="109dp" />
+
+    <TextView
+        android:text="Enter Direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignRight="@+id/location"
+        android:layout_alignEnd="@+id/location"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="53dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageView"
+
+        android:layout_marginBottom="333dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/description"
+        android:layout_toStartOf="@+id/description" />
+</RelativeLayout>

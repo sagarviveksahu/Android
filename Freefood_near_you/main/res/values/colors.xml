@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#FF0000</color>
+    <color name="darkred">#8B0000</color>
+    <color name="maroon">#800000</color>
+    <color name="tomato">#FF6347</color>
+    <color name="cinimon">#f69b5d</color>
+    <color name="choco">#D2691E</color>
+    <color name="choco1">#FF7F24</color>
+
+    <color name="colorFabRipple">#008000</color>
+</resources>

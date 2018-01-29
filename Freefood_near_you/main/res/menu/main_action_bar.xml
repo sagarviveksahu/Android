@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:id="@+id/refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Latest Feed"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_record"
+        android:icon="@drawable/ic_border_color_black_36dp"
+        android:title="New Post"
+        app:showAsAction="always" />
+
+
+</menu>

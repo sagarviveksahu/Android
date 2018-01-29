@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                tools:context=".ui.Home">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+
+        android:id="@+id/iit_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/list"
+        android:layout_toLeftOf="@+id/PostNew"
+        android:layout_toStartOf="@+id/PostNew"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PostNew"
+        android:text="Post New"
+        android:onClick="postnew"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#8B4513"
+        android:background="#A9A9A9"
+        android:textStyle="italic"
+        android:layout_alignParentEnd="true"/>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PostNew"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </ListView>
+
+</RelativeLayout>
